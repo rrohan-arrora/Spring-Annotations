@@ -22,4 +22,4 @@ public class SexCoach implements Coach {
 		return fortuneService.getLuckySexDay();
 	}
 
-}
+} 
