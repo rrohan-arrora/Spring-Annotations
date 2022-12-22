@@ -8,15 +8,17 @@ public class DoggyStyleCoach implements Coach{
 	
 	private FortuneService fortuneService;
 	
-	// default constructor
+	// default constructor, it will run everytime due to component annotation, even though the class object is not called.
 	public DoggyStyleCoach() {
-		System.out.println("Indise vagina  constructor");
+		System.out.println("Inside vagina  constructor");
 	}
 	
 	// define the setter method
+	// we can add any method above i.e method name can be any, just add autowired annotation
 	@Autowired //auto wired works for setter methods as well just like constructors.
 	public void setFortuneService(FortuneService fortuneService) {
-		System.out.println("Inside DoggyStyle setter method");
+		System.out.println("Inside DoggyStyle setter method"); // it will print statement everytime due to autowired annotation, 
+																//even though the object of class is not used.
 		this.fortuneService=fortuneService;
 	}
 	
